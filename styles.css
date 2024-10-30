@@ -1,0 +1,240 @@
+.container{
+    border: 2px solid #F6FCDF;
+    padding: 20px; 
+    display: inline-block; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.line-chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.line-chart-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.chart-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-row {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    background: #F6FCDF;
+    position: relative;
+    box-shadow: 0px 0px 3px #31511E;
+}
+
+.card .inner {
+    background: #F6FCDF;
+    border: 1px solid #31511E;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: inset 0px 0px 1px #1A1A19;
+}
+
+.card .inner .title {
+    display: block;
+    font-size: 9px;
+    color: #1A1A19;
+    margin-top: -10px;
+}
+
+.card .inner .text {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid #31511E;
+    background: #859F3D;
+    text-shadow: 1px 1px 0px #31511E;
+}
+
+.card .inner .number {
+    color: #1A1A19;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.card .inner .measure {
+    color: #31511E;
+    font-size: 10px;
+    display: block;
+    margin-top: -10px;
+}
+
+.temp {
+    background: #859F3D;
+    border: 1px solid #31511E;
+}
+
+.temp .inner {
+    border-top: 1px solid #31511E;
+}
+
+.temp .inner .icon {
+    display: block;
+    position: absolute;
+    top: -65px;
+    left: 115px;
+    width: 17px;
+    height: 17px;
+    background: #F6FCDF;
+    border-radius: 17px;
+    border: 4px solid #859F3D;
+    box-shadow: 0 0 0 4px #F6FCDF, 1px 1px 0 4px #31511E;
+}
+
+.temp .inner .icon:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 25px;
+    background: #F6FCDF;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    border: 5px solid #859F3D;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    box-shadow: 0 -4px 0 4px #F6FCDF, 4px -3px 0 1px #31511E;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.chart-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #859F3D;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: linear-gradient(135deg, #1A1A19, #31511E);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+    color: #F6FCDF;
+    font-family: 'Helvetica Neue', 'Arial';
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: small;
+}
+
+a {
+    display: block;
+    margin-bottom: 1em;
+    color: #F6FCDF;
+    text-decoration: none;
+
+    &:last-of-type {
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    margin: 0 10px;
+    vertical-align: top;
+    position: relative;
+    box-sizing: border-box;
+
+    span {
+        display: block;
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    canvas {
+        position: absolute;
+        color: #F6FCDF;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .chart-box {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .chart {
+        width: 70px;
+        height: 70px;
+    }
+
+    .chart span {
+        font-size: 1.5em;
+    }
+}
