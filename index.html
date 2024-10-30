@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Monitor</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scroll effect */
+        }
+        header {
+            background-color: #2d89ef;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #3b5998;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #5a82d1;
+        }
+
+        /* Main Container */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Showcase Items */
+        .showcase-item {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .showcase-item:hover {
+            transform: translateY(-5px);
+        }
+        .showcase-item h2 {
+            color: #2d89ef;
+        }
+
+        /* Image Styling */
+        .centered-image {
+            width: 50%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Smart Farm Monitor</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#gadget">Gadget</a></li>
+            <li><a href="#func">Main Function</a></li>
+            <li><a href="#input">Input</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#output">Output</a></li>
+            <li><a href="#source">Source</a></li>
+            <li><a href="#member">Member</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <img src="picture/smartfarm.jpg" class="centered-image">
+        <section id="abstract" class="showcase-item">
+            <h2>Abstract</h2>
+            <p>โปรเจกต์นี้มีวัตถุประสงค์เพื่อพัฒนาระบบ Smart Farm ที่สามารถติดตามและแสดงผลข้อมูลของพืชแต่ละต้นผ่านทางเซ็นเซอร์ 
+                โดยข้อมูลที่ได้จะถูกส่งไปยังเซิร์ฟเวอร์และแสดงผลบนเว็บไซต์ ทำให้ผู้ใช้งานสามารถติดตามสถานะและการเจริญเติบโตของพืชได้อย่างมีประสิทธิภาพและในเวลาใกล้เคียงเรียลไทม์</p>
+        </section>
+
+        <section id="gadget" class="showcase-item">
+            <h2>Gadget</h2>
+            <img src="picture/gadget.png" class="centered-image">
+        </section>
+
+        <section id="func" class="showcase-item">
+            <h2>Main Function</h2>
+            <p>สามารถวัดความชื้น</p>
+            <p>สามารถวัดแสง </p>
+        </section>
+
+        <section id="input" class="showcase-item">
+            <h2>Input</h2>
+            <p>Arduino® UNO R4 WiFi รับข้อมูลด้วย Sensors จากสภาพแวดล้อม ณ บริเวณพืช เพื่อนำไปประมวลผล</p>
+        </section>
+
+        <section id="process" class="showcase-item">
+            <h2>Process</h2>
+            <p>ทำการประมวลผลและนำส่งต่อในรูปแบบ % ซึ่งเป็นข้อมูลที่สามารถรับรู้ได้อย่างง่าย</p>
+            <img src="picture/process.png" class="centered-image">
+        </section>
+
+        <section id="output" class="showcase-item">
+            <h2>Output</h2>
+            <p>แสดงข้อมูลที่วัดได้แบบ Real-Time บนเว็บไซด์</p>
+        </section>
+
+        <section id="source" class="showcase-item">
+            <h2>Source</h2>
+            <p><a href="https://www.example.com/demo-video" target="_blank">Demo Video</a></p>
+            <p><a href="https://github.com/zedl3all/SmartFarm_Monitor" target="_blank">Source Code</a></p>
+            <p><a href="https://www.example.com/dashboard" target="_blank">Dashboard Website</a></p>
+            <p><a href="https://www.example.com/poster" target="_blank">Poster</a></p>
+        </section>        
+
+        <section id="member" class="showcase-item">
+            <h2>Member</h2>
+            <p>66070082 ธนภัทร สงวนวงศ์</p>
+            <p>66070083 ธนสิทธิ์ ตั้งใจ</p>
+            <p>66070112 ปณต เลียงพิบูลย์</p>
+        </section>
+    </div>
+</body>
+</html>
