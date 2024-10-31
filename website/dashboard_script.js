@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
         const lightChart = new Chart(lightCtx, createChartConfig('Light'));
 
         // MQTT Setup (Existing Code)
-        const mqttClient = mqtt.connect('ws://test.mosquitto.org:8080/');
+        const mqttClient = mqtt.connect('wss://test.mosquitto.org:8081/'); // Use wss:// instead of ws://
         const topic = 'it66070082/test';
 
         mqttClient.on('connect', function () {
