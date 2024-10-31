@@ -77,7 +77,7 @@
         <section id="source" class="showcase-item">
             <h2>• Source</h2>
             <div class="buttons">
-                <button class="Demo_Video" onclick="window.open('https://youtu.be/tBhO9Ai0uv4', '_self')">
+                <button class="Demo_Video" onclick="window.open('https://www.example.com/demo-video', '_self')">
                     <i class="fa-solid fa-film"></i>
                     <span>Demo Video</span>
                 </button>
@@ -89,7 +89,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Dashboard Website</span>
                 </button>
-                <button class="Poster" onclick="window.open('https://www.example.com/poster', '_self')">
+                <button class="Poster" onclick="downloadPoster()">
                     <i class="fa-solid fa-print"></i>
                     <span>Poster</span>
                 </button>
@@ -124,4 +124,12 @@
         </section>
     </div>
 </body>
+<script>
+    function downloadPoster() {
+        const link = document.createElement('a');
+        link.href = '/poster/智能农场监控.pdf';
+        link.download = '智能农场监控.pdf';
+        link.click();
+    }
+</script>
 </html>
