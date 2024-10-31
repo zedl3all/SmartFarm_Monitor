@@ -62,13 +62,78 @@ nav ul li a:hover {
     background-color: #31511E;
 }
 
+.Header {
+    animation-name: movein2;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movein2 {
+    from {
+        margin-top: -50%;
+        scale: 0.3;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0%;
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.nav_bar {
+    animation-name: movein1;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0; /* Initially hidden */
+    animation-fill-mode: forwards; /* Retain the final state of the animation */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes movein1 {
+    from {
+        margin-trim: -100%;
+        scale: 0.3;
+        opacity: 0;
+    }
+
+    to {
+        margin-trim: 0%;
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 /* Main Container */
 .container {
     width: 85%;
     margin: 30px auto;
     overflow: hidden;
     padding: 20px;
+    animation-name: movein;
+    animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
 }
+
+@keyframes movein {
+    from {
+        margin-bottom: 100%;
+        scale: 0.3;
+        opacity: 0;
+    }
+
+    to {
+        margin-bottom: 0%;
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 
 /* Showcase Items */
 .showcase-item {
