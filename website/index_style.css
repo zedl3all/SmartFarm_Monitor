@@ -87,8 +87,10 @@ nav ul li a:hover {
     animation-name: movein1;
     animation-duration: 1s;
     animation-delay: 0.5s;
-    opacity: 0; /* Initially hidden */
-    animation-fill-mode: forwards; /* Retain the final state of the animation */
+    opacity: 0;
+    /* Initially hidden */
+    animation-fill-mode: forwards;
+    /* Retain the final state of the animation */
     animation-timing-function: ease-in-out;
 }
 
@@ -181,7 +183,10 @@ nav ul li a:hover {
     gap: 2rem;
 }
 
-button.Demo_Video,  button.Source_Code, button.Dashboard_Website, button.Poster {
+button.Demo_Video,
+button.Source_Code,
+button.Dashboard_Website,
+button.Poster {
     container-type: inline-size;
     aspect-ratio: 1/1;
     border: 0.5rem solid transparent;
@@ -235,9 +240,66 @@ button.Demo_Video,  button.Source_Code, button.Dashboard_Website, button.Poster 
         font-size: 16cqi;
     }
 }
-#source h2{
+
+#source h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+#member h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 350px;
+    border-radius: 5%;
+    border: 2px solid #31511E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card-container {
+    text-align: center;
+    font-size: 125%;
+}
+
+.card-container p {
+    margin: 0;
+    margin-top: 0;
+}
+
+.card-container h4 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.avatar_image{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    border-radius: 5%;
 }
