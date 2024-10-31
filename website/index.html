@@ -89,7 +89,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Dashboard Website</span>
                 </button>
-                <button class="Poster" onclick="downloadPoster()">
+                <button class="Poster" onclick="window.open('https://github.com/zedl3all/SmartFarm_Monitor/blob/main/poster/%E6%99%BA%E8%83%BD%E5%86%9C%E5%9C%BA%E7%9B%91%E6%8E%A7.pdf', '_self')">
                     <i class="fa-solid fa-print"></i>
                     <span>Poster</span>
                 </button>
@@ -124,12 +124,4 @@
         </section>
     </div>
 </body>
-<script>
-    function downloadPoster() {
-        const link = document.createElement('a');
-        link.href = '/poster/智能农场监控.pdf';
-        link.download = '智能农场监控.pdf';
-        link.click();
-    }
-</script>
 </html>
