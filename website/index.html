@@ -32,8 +32,9 @@
         <img src="picture/smartfarm.jpg" class="centered-image">
         <section id="abstract" class="showcase-item">
             <h2>• Abstract</h2>
-            <p>โปรเจกต์นี้มีวัตถุประสงค์เพื่อพัฒนาระบบ Smart Farm ที่สามารถติดตามและแสดงผลข้อมูลของพืชแต่ละต้นผ่านทางเซ็นเซอร์ 
-                โดยข้อมูลที่ได้จะถูกส่งไปยังเซิร์ฟเวอร์และแสดงผลบนเว็บไซต์ ทำให้ผู้ใช้งานสามารถติดตามสถานะและการเจริญเติบโตของพืชได้อย่างมีประสิทธิภาพและในเวลาใกล้เคียงเรียลไทม์</p>
+            <p>Project นี้ต้องการแก้คือ การจัดการดูแลพืชในฟาร์มขนาดใหญ่หรือฟาร์มที่มีพืชหลายชนิดอย่างมีประสิทธิภาพ 
+                ซึ่งมักมีความยุ่งยากในการติดตามสถานะสุขภาพของพืชแต่ละต้น เช่น การรดน้ำ ปริมาณสารอาหาร อุณหภูมิ ความชื้น หรือความต้องการแสงแดดในแต่ละชนิด 
+                ปัญหานี้มักเกิดจากการดูแลแบบทั่วไปที่ไม่มีระบบอัตโนมัติ ทำให้เกษตรกรไม่สามารถตรวจสอบพืชทุกต้นได้อย่างแม่นยำตลอดเวลา</p>
         </section>
 
         <section id="gadget" class="showcase-item">
@@ -59,19 +60,24 @@
 
         <section id="process" class="showcase-item">
             <h2>• Process</h2>
-            <p>ทำการประมวลผลและนำส่งต่อในรูปแบบ % ซึ่งเป็นข้อมูลที่สามารถรับรู้ได้อย่างง่าย</p>
+            <p>ทำการประมวลผลข้อมูลจากเซ็นเซอร์ที่ได้รับจากสภาพแวดล้อมของพืช
+                แล้วส่งข้อมูลผ่านทาง WiFi โดยใช้โปรโตคอล MQTT 
+                และแสดงผลขึ้นบนหน้าเว็บ</p>
             <img src="picture/process.png" class="centered-image">
         </section>
 
         <section id="output" class="showcase-item">
             <h2>• Output</h2>
-            <p>แสดงข้อมูลที่วัดได้แบบ Real-Time บนเว็บไซด์</p>
+            <p>แสดงข้อมูลที่วัดได้แบบเรียลไทม์จากจุดติดตั้ง Arduino® UNO R4 พร้อมเซ็นเซอร์
+                ข้อมูลถูกส่งขึ้นเว็บไซด์เพื่อการรายงานผลอย่างแม่นยำและต่อเนื่อง
+                ผู้ใช้งานสามารถตรวจสอบและติดตามสถานะได้ตลอดเวลาในรูปแบบเรียลไทม์</p>
+            <img src="picture/dashboard.png" class="centered-image">
         </section>
 
         <section id="source" class="showcase-item">
             <h2>• Source</h2>
             <div class="buttons">
-                <button class="Demo_Video" onclick="window.open('https://www.example.com/demo-video', '_self')">
+                <button class="Demo_Video" onclick="window.open('https://youtu.be/tBhO9Ai0uv4', '_self')">
                     <i class="fa-solid fa-film"></i>
                     <span>Demo Video</span>
                 </button>
@@ -88,10 +94,6 @@
                     <span>Poster</span>
                 </button>
             </div>
-            <!-- <p><a href="https://www.example.com/demo-video" target="_blank">Demo Video</a></p>
-            <p><a href="https://github.com/zedl3all/SmartFarm_Monitor" target="_blank">Source Code</a></p>
-            <p><a href="./smart_farm_dashboard.html" target="_blank">Dashboard Website</a></p>
-            <p><a href="https://www.example.com/poster" target="_blank">Poster</a></p> -->
         </section>        
 
         <section id="member" class="showcase-item">
