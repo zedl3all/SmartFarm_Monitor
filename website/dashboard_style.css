@@ -3,6 +3,22 @@
     padding: 20px; 
     display: inline-block; 
     background-color: rgba(255, 255, 255, 0.1);
+    animation-name: movein;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes movein {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .line-chart-container {
